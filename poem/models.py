@@ -22,7 +22,7 @@ class Poem(models.Model):
 
     def save(self, *args, **kwargs):
         try:
-            file_model = 'https://www.dropbox.com/s/y1rihwecbb06ff2/poem_generation%28csv_txt%29.h5?raw=1'
+            file_model = '<add model link>'
             data = requests.get(file_model).content
             f1 = io.BytesIO(data)
             with h5py.File(f1, 'r') as local_file:
