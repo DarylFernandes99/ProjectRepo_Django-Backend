@@ -44,7 +44,7 @@ class Llie(models.Model):
             #file_model = os.path.join(settings.BASE_DIR, 'llie\Trained Model\enhance_image9.h5')
             #file_model = os.path.join(settings.BASE_DIR, 'llie\Trained Model\llie_model.h5')
             #model = load_model(file_model)
-            file_model = 'https://www.dropbox.com/s/49i01a0oxkx3mvp/llie_model.h5?raw=1'
+            file_model = '<add model link>'
             data = requests.get(file_model).content
             f1 = io.BytesIO(data)
             with h5py.File(f1, 'r') as local_file:
