@@ -38,7 +38,7 @@ class Colorize(models.Model):
 
             #file_model = os.path.join(settings.BASE_DIR, 'Colorize\Trained Model\colorize_image.h5')
             #model = load_model(file_model)
-            file_model = 'https://www.dropbox.com/s/uwue04b0v2l6hjl/colorize_image.h5?raw=1'
+            file_model = '<link to model>'
             data = requests.get(file_model).content
             f1 = io.BytesIO(data)
             with h5py.File(f1, 'r') as local_file:
